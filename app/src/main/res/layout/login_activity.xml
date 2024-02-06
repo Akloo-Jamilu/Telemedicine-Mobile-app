@@ -9,27 +9,19 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:background="@drawable/box"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="607dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="458dp" />
+        tools:layout_editor_absoluteY="531dp" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -39,12 +31,38 @@
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
+        android:paddingBottom="10dp"
         android:selectAllOnFocus="false"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteX="58dp"
         tools:layout_editor_absoluteY="335dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/textView2"
@@ -79,4 +97,5 @@
         android:text="TextView"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="739dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

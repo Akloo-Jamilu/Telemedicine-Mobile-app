@@ -32,10 +32,17 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (newUserName.length()==0 || newPasword.length()==0){
                     Toast.makeText(getApplicationContext(), "please key in your details", Toast.LENGTH_SHORT).show();
-
+                }else {
+                    Toast.makeText(getApplicationContext(), "login Successfully", Toast.LENGTH_SHORT).show();
                 }
 
-                Toast.makeText(getApplicationContext(), "login Successfully", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }

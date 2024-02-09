@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="@drawable/background"
     tools:context=".LoginActivity">
 
     <Button
@@ -46,7 +46,7 @@
         android:layout_width="313dp"
         android:layout_height="40dp"
         android:background="@drawable/input_bg"
-        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"

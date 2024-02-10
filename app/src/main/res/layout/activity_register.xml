@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Tele Medicine"
         android:textColor="@color/purple_200"
-        android:textSize="34sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

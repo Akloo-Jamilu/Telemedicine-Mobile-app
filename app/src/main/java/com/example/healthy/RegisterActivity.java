@@ -49,6 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }else {
                     if (password.compareTo(confirmPassword) == 0){
                         if (isValid(password)){
+                            db.register(user, email, password);
                             Toast.makeText(getApplicationContext(), "Record Inserted successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                         }else {

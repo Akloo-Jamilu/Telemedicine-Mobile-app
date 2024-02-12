@@ -2,6 +2,7 @@ package com.example.healthy;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -33,5 +34,15 @@ public class DBConnection extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         sqLiteDatabase.insert("users", null, contentValues);
         sqLiteDatabase.close();
+    }
+
+    public int login(String username, String password){
+        int result = 0;
+        String str[] = new String[2];
+        str[0] = username;
+        str[1] = password;
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM users WHERE username=? and password=?");
+
     }
 }

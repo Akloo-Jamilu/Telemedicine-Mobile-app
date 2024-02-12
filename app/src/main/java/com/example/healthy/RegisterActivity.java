@@ -42,12 +42,18 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = newEmail.getText().toString();
                 String password = newPassword.getText().toString();
                 String confirmPassword = newConfirmPassword.getText().toString();
+                DBConnection db = new DBConnection(getApplicationContext(), "telemedicine", null, 1);
 
                 if (user.length() == 0 || email.length() == 0 || password.length() == 0 || confirmPassword.length() == 0){
                     Toast.makeText(getApplicationContext(), "please fill All details", Toast.LENGTH_SHORT).show();
                 }else {
                     if (password.compareTo(confirmPassword) == 0){
-
+                        if (isValid(password)){
+                            Toast.makeText(getApplicationContext(), "Record Inserted successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                        }else {
+                            Toast.makeText(getApplicationContext(), "password must contain at least 8 character, having letter, digit and special character", Toast.LENGTH_SHORT).show();
+                        }
                     }else {
                         Toast.makeText(getApplicationContext(), "password and confirm password don't match", Toast.LENGTH_SHORT).show();
                     }

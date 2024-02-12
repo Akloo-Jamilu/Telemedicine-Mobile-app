@@ -29,7 +29,7 @@ public class DBConnection extends SQLiteOpenHelper {
     public void register(String username, String email, String password){
         ContentValues contentValues = new ContentValues();
         contentValues.put("username", username);
-        contentValues.put("emil", email);
+        contentValues.put("email", email);
         contentValues.put("password", password);
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         sqLiteDatabase.insert("users", null, contentValues);
@@ -38,14 +38,17 @@ public class DBConnection extends SQLiteOpenHelper {
 
     public int login(String username, String password){
         int result = 0;
-        String str[] = new String[2];
-        str[0] = username;
-        str[1] = password;
+        String[] str = {username, password};
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM users WHERE username=? and password=?", str);
-        if (cursor.moveToFirst()){
-            result = 1;
+        try {
+            if (cursor.moveToFirst()){
+                result = 1;
+            }
+        } finally {
+            cursor.close();
         }
         return result;
     }
+
 }

@@ -38,18 +38,18 @@ public class RegisterActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String user = newUser.getText().toString();
+                String username = newUser.getText().toString();
                 String email = newEmail.getText().toString();
                 String password = newPassword.getText().toString();
                 String confirmPassword = newConfirmPassword.getText().toString();
                 DBConnection db = new DBConnection(getApplicationContext(), "telemedicine", null, 1);
 
-                if (user.length() == 0 || email.length() == 0 || password.length() == 0 || confirmPassword.length() == 0){
+                if (username.length() == 0 || email.length() == 0 || password.length() == 0 || confirmPassword.length() == 0){
                     Toast.makeText(getApplicationContext(), "please fill All details", Toast.LENGTH_SHORT).show();
                 }else {
                     if (password.compareTo(confirmPassword) == 0){
                         if (isValid(password)){
-                            db.register(user, email, password);
+                            db.register(username, email, password);
                             Toast.makeText(getApplicationContext(), "Record Inserted successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                         }else {

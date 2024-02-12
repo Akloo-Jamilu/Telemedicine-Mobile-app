@@ -42,7 +42,10 @@ public class DBConnection extends SQLiteOpenHelper {
         str[0] = username;
         str[1] = password;
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM users WHERE username=? and password=?");
-
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM users WHERE username=? and password=?", str);
+        if (cursor.moveToFirst()){
+            result = 1;
+        }
+        return result;
     }
 }

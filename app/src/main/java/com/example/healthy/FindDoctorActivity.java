@@ -22,5 +22,56 @@ public class FindDoctorActivity extends AppCompatActivity {
 
             }
         });
+
+        CardView familyPhysician = findViewById(R.id.cardFDFamilyPhysician);
+        familyPhysician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);
+                it.putExtra("title", "family physicians");
+                startActivity(it);
+            }
+        });
+
+        CardView dietitian = findViewById(R.id.cardFDDietician);
+        dietitian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);
+                it.putExtra("title", "Dietitian");
+                startActivity(it);
+            }
+        });
+
+        CardView dentist = findViewById(R.id.cardFDDentiest);
+        dentist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);
+                it.putExtra("title", "Dentist");
+                startActivity(it);
+            }
+        });
+
+
+        CardView surgeon = findViewById(R.id.cardFDSurgeon);
+        surgeon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);
+                it.putExtra("title", "Surgeon");
+                startActivity(it);
+            }
+        });
+
+        CardView cardiologist = findViewById(R.id.cardFDCardiologist);
+        cardiologist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);
+                it.putExtra("title", "Cardiologist");
+                startActivity(it);
+            }
+        });
     }
 }

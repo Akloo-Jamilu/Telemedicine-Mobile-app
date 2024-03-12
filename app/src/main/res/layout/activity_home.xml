@@ -34,7 +34,7 @@
            android:layout_rowWeight="1"
            android:layout_columnWeight="1"
            android:layout_gravity="fill"
-           app:cardBackgroundColor="@color/teal_200"
+           app:cardBackgroundColor="#13334F"
            app:cardCornerRadius="4dp"
            app:cardElevation="8dp"
            app:cardUseCompatPadding="true">
@@ -53,8 +53,8 @@
                    android:layout_height="wrap_content"
                    android:text="LAB TEST"
                    android:textAlignment="center"
-                   android:textColor="@color/redColor"
-                   android:textStyle="bold"/>
+                   android:textColor="@color/white"
+                   android:textStyle="normal"/>
 
            </LinearLayout>
        </androidx.cardview.widget.CardView>
@@ -68,7 +68,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/teal_200"
+            app:cardBackgroundColor="#13334F"
             app:cardCornerRadius="4dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -87,8 +87,8 @@
                     android:layout_height="wrap_content"
                     android:text="BUY MEDICINE"
                     android:textAlignment="center"
-                    android:textColor="@color/redColor"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -102,7 +102,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/teal_200"
+            app:cardBackgroundColor="#13334F"
             app:cardCornerRadius="4dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -121,8 +121,8 @@
                     android:layout_height="wrap_content"
                     android:text="FIND A DOCTOR"
                     android:textAlignment="center"
-                    android:textColor="@color/redColor"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -135,7 +135,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/teal_200"
+            app:cardBackgroundColor="#13334F"
             app:cardCornerRadius="4dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -154,8 +154,8 @@
                     android:layout_height="wrap_content"
                     android:text="HEALTH ARTICLES"
                     android:textAlignment="center"
-                    android:textColor="@color/redColor"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -168,7 +168,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/teal_200"
+            app:cardBackgroundColor="#13334F"
             app:cardCornerRadius="4dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -187,8 +187,8 @@
                     android:layout_height="wrap_content"
                     android:text="ORDER DETAILS"
                     android:textAlignment="center"
-                    android:textColor="@color/redColor"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -201,7 +201,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/teal_200"
+            app:cardBackgroundColor="#13334F"
             app:cardCornerRadius="4dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -220,8 +220,8 @@
                     android:layout_height="wrap_content"
                     android:text="LOGOUT"
                     android:textAlignment="center"
-                    android:textColor="@color/redColor"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>

@@ -6,7 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DoctorDetailsActivity extends AppCompatActivity {
     private String [][] doctorDetails =
@@ -61,6 +65,9 @@ public class DoctorDetailsActivity extends AppCompatActivity {
     TextView tv;
     Button btn;
     String [][] doctorDetail = {};
+    ArrayList list;
+    HashMap<String, String> item;
+    SimpleAdapter sa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,16 +84,16 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             doctorDetail = doctorDetails;
         else
         if(title.compareTo("Dietitian")==0)
-            doctorDetail = doctorDetails;
+            doctorDetail = doctorDetails2;
         else
         if(title.compareTo("Dentist")==0)
-            doctorDetail = doctorDetails;
+            doctorDetail = doctorDetails3;
         else
         if(title.compareTo("Surgeon")==0)
-            doctorDetail = doctorDetails;
+            doctorDetail = doctorDetails4;
         else
-        if(title.compareTo("Cardiologist")==0)
-            doctorDetail = doctorDetails;
+//        if(title.compareTo("Cardiologist")==0)
+            doctorDetail = doctorDetails5;
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +101,17 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                 startActivity(new Intent(DoctorDetailsActivity.this, FindDoctorActivity.class));
             }
         });
+
+        list = new ArrayList();
+        for (int i =0; i<doctorDetail.length; i++){
+            item = new HashMap<String, String>();
+            item.put("line1", doctorDetails[i][0]);
+            item.put("line2", doctorDetails[i][2]);
+            item.put("line3", doctorDetails[i][3]);
+            item.put("line4", doctorDetails[i][4]);
+            item.put("line5", "cons fees:"+doctorDetails[i][4]+"/-");
+
+        }
 
     }
 }

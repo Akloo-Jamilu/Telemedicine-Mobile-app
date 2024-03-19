@@ -105,12 +105,12 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         list = new ArrayList();
         for (int i =0; i<doctorDetail.length; i++){
             item = new HashMap<String, String>();
-            item.put("line1", doctorDetails[i][0]);
-            item.put("line2", doctorDetails[i][2]);
-            item.put("line3", doctorDetails[i][3]);
-            item.put("line4", doctorDetails[i][4]);
-            item.put("line5", "cons fees:"+doctorDetails[i][4]+"/-");
-
+            item.put("line1", doctorDetail[i][0]);
+            item.put("line2", doctorDetail[i][2]);
+            item.put("line3", doctorDetail[i][3]);
+            item.put("line4", doctorDetail[i][4]);
+            item.put("line5", "cons fees:"+doctorDetail [i][4]+"/-");
+            list.add(item);
         }
 
     }

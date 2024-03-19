@@ -22,6 +22,23 @@
         android:text="TextView"
         android:textColor="#FFF000"
         android:textSize="14sp"
-        android:textStyle="italic" />
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/line_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+
+            android:textColor="#ffff66"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
